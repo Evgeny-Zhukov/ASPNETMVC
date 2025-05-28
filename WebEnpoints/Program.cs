@@ -1,9 +1,17 @@
-using System.Security.Principal;
-using WebEnpoints;
+using WebEnpoints.Models;
+using WebEnpoints.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<ControllerRequestCounterFilter>();
+});
+
 var app = builder.Build();
+app.MapControllers();
+app.MapDefaultControllerRoute();
+
 
 /*app.UseRouting();
 

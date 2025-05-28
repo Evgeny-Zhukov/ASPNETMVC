@@ -1,4 +1,4 @@
-﻿namespace WebEnpoints
+﻿namespace WebEnpoints.Models
 {
     public class Course
     {
