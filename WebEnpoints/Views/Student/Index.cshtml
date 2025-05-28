@@ -2,22 +2,10 @@
 
 <h2>Student List</h2>
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var s in Model)
-        {
-            <tr>
-                <th>@s.Id</th>
-                <th>@s.Name</th>
-                <th>@s.Age</th>
-            </tr>
-        }
-    </tbody>
-</table>
+<ul>
+    @foreach (var s in Model)
+    {
+        @Html.Partial("_StudentLink", s)
+    }
+</ul>
+        

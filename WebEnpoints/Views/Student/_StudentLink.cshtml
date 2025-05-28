@@ -1,0 +1,9 @@
+﻿@model WebEnpoints.Models.Student
+
+<li>
+    <a asp-controller="Student"
+        asp-action="Details"
+        asp-route-id="@Model.Id">
+            @Model.Name, age @Model.Age
+    </a>
+</li>

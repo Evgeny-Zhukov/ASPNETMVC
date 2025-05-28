@@ -31,5 +31,17 @@ namespace WebEnpoints.Controllers
 
             return View("Index", filtred);
         }
+
+        [HttpGet("details/{id}")]
+        public IActionResult Details(int id) 
+        {
+            var student = Student.All.FirstOrDefault(s => s.Id == id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return View(student);
+        }
     }
 }
