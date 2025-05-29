@@ -1,5 +1,6 @@
 using WebEnpoints.Models;
 using WebEnpoints.Filters;
+using WebEnpoints.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ builder.Services.AddControllersWithViews(options =>
 {
     options.Filters.Add<ControllerRequestCounterFilter>();
 });
+
+builder.Services.AddSingleton<IStudentDao, StudentDao>();
 
 var app = builder.Build();
 app.MapControllers();
