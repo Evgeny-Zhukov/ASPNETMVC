@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba2", "Laba2\Laba2.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEnpoints", "WebEnpoints\WebEnpoints.csproj", "{3F0067FF-B7FB-5E1F-39CE-E6780A7F4155}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba6", "..\Laba6\Laba6.csproj", "{663BE7FE-35C0-4CED-A03B-213328D70EE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3F0067FF-B7FB-5E1F-39CE-E6780A7F4155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0067FF-B7FB-5E1F-39CE-E6780A7F4155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0067FF-B7FB-5E1F-39CE-E6780A7F4155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
