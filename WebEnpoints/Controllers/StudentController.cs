@@ -33,7 +33,7 @@ namespace WebEnpoints.Controllers
         }
 
         [HttpGet("details/{id}")]
-        public IActionResult Details(int id) 
+        public IActionResult Details(int id)
         {
             var student = Student.All.FirstOrDefault(s => s.Id == id);
             if (student == null)
@@ -42,6 +42,24 @@ namespace WebEnpoints.Controllers
             }
 
             return View(student);
+        }
+
+        [HttpGet("create")]
+        public IActionResult Create() 
+        {
+            return View();
+        }
+
+        [HttpPost("create")]
+        public IActionResult Create(Student student)
+        {
+            if(!ModelState.IsValid)
+                return View(student);
+
+            student.Id = Student.All.Max(s => s.Id) + 1;
+            Student.All.Add(student);
+
+            return RedirectToAction("Index");
         }
     }
 }
