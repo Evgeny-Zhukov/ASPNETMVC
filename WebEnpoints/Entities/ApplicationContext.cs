@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebEnpoints.Models;
 
 namespace WebEnpoints.Entities
 {

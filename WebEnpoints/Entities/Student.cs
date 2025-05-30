@@ -13,7 +13,7 @@ namespace WebEnpoints.Entities
         public string Name { get; set; } = string.Empty;
 
         [Range(18, 120, ErrorMessage = "Возраст должен быть от 18 до 120 лет")]
-        public int? Age { get; set; }
+        public int Age { get; set; }
 
         [AddressParts(ErrorMessage = "Адрес должен содержать три части, разделенные запятыми")]
         public string Address { get; set; } = "";
