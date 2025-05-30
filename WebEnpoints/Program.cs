@@ -1,6 +1,8 @@
-using WebEnpoints.Models;
+﻿using WebEnpoints.Models;
 using WebEnpoints.Filters;
 using WebEnpoints.Services;
+using WebEnpoints.Entities;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.AddControllersWithViews(options =>
 });
 
 builder.Services.AddSingleton<IStudentDao, StudentDao>();
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 app.MapControllers();
