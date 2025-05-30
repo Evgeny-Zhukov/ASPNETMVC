@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebEnpoints.Entities;
-using WebEnpoints.Models;
 
 namespace WebEnpoints.Controllers
 {
@@ -153,5 +147,19 @@ namespace WebEnpoints.Controllers
         {
             return _context.Students.Any(e => e.Id == id);
         }
+        public async Task<IActionResult> Search(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return View("Index", await _context.Students.ToListAsync());
+            }
+
+            var students = await _context.Students
+                .Where(s => s.Name.Contains(name, StringComparison.OrdinalIgnoreCase))
+                .ToListAsync();
+
+            return View("Index", students);
+        }
+
     }
 }

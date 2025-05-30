@@ -1,4 +1,4 @@
-﻿using WebEnpoints.Models;
+﻿using WebEnpoints.Entities;
 
 namespace WebEnpoints.Services
 {

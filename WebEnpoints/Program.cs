@@ -1,7 +1,6 @@
-﻿using WebEnpoints.Models;
+﻿using WebEnpoints.Entities;
 using WebEnpoints.Filters;
 using WebEnpoints.Services;
-using WebEnpoints.Entities;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

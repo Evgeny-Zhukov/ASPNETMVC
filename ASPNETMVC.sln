@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEnpoints", "WebEnpoints\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba6", "..\Laba6\Laba6.csproj", "{663BE7FE-35C0-4CED-A03B-213328D70EE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba7", "Laba7\Laba7.csproj", "{3D7FA48F-07B5-434E-B423-166F82C07E0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEnpoints.Tests", "..\WebEnpoints.Tests\WebEnpoints.Tests.csproj", "{714D6B62-AE92-493D-9FB0-5586D5ED9C77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{663BE7FE-35C0-4CED-A03B-213328D70EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7FA48F-07B5-434E-B423-166F82C07E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7FA48F-07B5-434E-B423-166F82C07E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7FA48F-07B5-434E-B423-166F82C07E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7FA48F-07B5-434E-B423-166F82C07E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714D6B62-AE92-493D-9FB0-5586D5ED9C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714D6B62-AE92-493D-9FB0-5586D5ED9C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714D6B62-AE92-493D-9FB0-5586D5ED9C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714D6B62-AE92-493D-9FB0-5586D5ED9C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
